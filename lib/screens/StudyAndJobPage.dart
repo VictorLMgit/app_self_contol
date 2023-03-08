@@ -31,12 +31,15 @@ class _MyWidgetState extends State<StudyAndJobPage> {
             ),
             body: const Menu(
               name: "Estudo e trabalho",
+              listItensAlimentation: [],
             ),
-            floatingActionButton:FloatingActionButton(onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
+            floatingActionButton: FloatingActionButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
                     return FormPage(name: "Estudo e trabalho");
                   }));
-            }, child: const Icon(Icons.add)),
+                },
+                child: const Icon(Icons.add)),
           );
         },
       ),

@@ -31,12 +31,15 @@ class _MyWidgetState extends State<WorkOutPage> {
             ),
             body: const Menu(
               name: "Treino",
+              listItensAlimentation: [],
             ),
-            floatingActionButton: FloatingActionButton(onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
+            floatingActionButton: FloatingActionButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
                     return FormPage(name: "Treino");
                   }));
-            }, child: const Icon(Icons.add)),
+                },
+                child: const Icon(Icons.add)),
           );
         },
       ),

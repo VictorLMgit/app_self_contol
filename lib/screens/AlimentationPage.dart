@@ -22,6 +22,7 @@ class _MyWidgetState extends State<AlimentationPage> {
 
   getItens() async {
     final itensAlimentation = await AlimentationDao().findAll();
+
     lisAtimentation.addAll(itensAlimentation);
   }
 
